@@ -25,14 +25,27 @@
 
 .profile {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: 650px;
+  height: 650px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 100%;
+  margin-bottom: 0;
+  transform: translate(-50%, -100%);
   z-index: 2;
+  opacity: 0;
+  animation: portfolio-move-in 1.2s 1s forwards;
 }
 
+@keyframes portfolio-move-in {
+  from {
+    opacity: 0;
+    left: 150%;
+  }
+  to {
+    opacity: 1;
+    left: 50%;
+  }
+}
 .moon {
   position: absolute;
   top: 0;
@@ -55,4 +68,8 @@
     opacity: 1;
     background-position: top left;
   }
+}
+
+.wave {
+  box-shadow: 0px 0px 15px #fff;
 }

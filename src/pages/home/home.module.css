@@ -1,4 +1,5 @@
 .backgroundColorSky {
+  position: absolute;
   width: 100%;
   background: #202736;
   background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
@@ -25,11 +26,8 @@
 
 .profile {
   position: absolute;
-  width: 650px;
-  height: 650px;
-  left: 50%;
-  top: 100%;
-  margin-bottom: 0;
+  width: 60%;
+  height: 85%;
   transform: translate(-50%, -100%);
   z-index: 2;
   opacity: 0;
@@ -43,7 +41,7 @@
   }
   to {
     opacity: 1;
-    left: 50%;
+    left: 75%;
   }
 }
 .moon {
@@ -71,5 +69,73 @@
 }
 
 .wave {
+  position: absolute;
   box-shadow: 0px 0px 15px #fff;
+  z-index: 3;
+}
+
+.backgroundColorSky pre {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  opacity: 0;
+  font-size: 50px;
+  z-index: 4;
+  text-align: center;
+  animation: pre--move-in 1.2s 1s forwards;
+}
+
+.backgroundColorSky pre span {
+  color: #f300b4;
+}
+
+@keyframes pre--move-in {
+  from {
+    opacity: 0;
+    left: -150%;
+  }
+
+  to {
+    opacity: 1;
+    left: 8%;
+  }
+}
+
+.downloadCv {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  left: 19%;
+  top: 70%;
+  background: #f300b4;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: #fafafa;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  line-height: 60px;
+  opacity: 0;
+  animation: downloadBtn--move-in 1.2s 1s forwards;
+}
+
+.downloadCv:hover,
+.downloadCv:active {
+  transition: 0.5s;
+  top: 69.5%;
+  background: transparent;
+  border: 1px solid #f300b4;
+}
+
+@keyframes downloadBtn--move-in {
+  from {
+    opacity: 0;
+    left: -150%;
+  }
+
+  to {
+    opacity: 1;
+    left: 19%;
+  }
 }

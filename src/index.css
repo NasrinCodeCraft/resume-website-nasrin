@@ -17,3 +17,7 @@ a {
   height: 100vh;
   z-index: -50;
 }
+
+body {
+  overflow-x: hidden;
+}

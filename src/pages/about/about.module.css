@@ -1,0 +1,27 @@
+.backgroundColorSky {
+    z-index: -60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    line-height: 55px;
+    /* margin-top: 10%; */
+}
+
+.bio pre{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+
+.bio pre p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 4%;
+}

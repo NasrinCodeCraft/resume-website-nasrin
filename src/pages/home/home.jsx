@@ -14,7 +14,7 @@ function Home() {
                 </pre>
                 <img className={styled.profile} src={prorfile} alt="Profile" />
                 <div className={styled.moon}></div>
-                <img src={wave} className={styled.wave} alt="Wave" />
+                {/* <img src={wave} className={styled.wave} alt="Wave" /> */}
             </div>
             <a className={styled.downloadCv} href={downloadCv} target="_blank" >
                 Download My Cv

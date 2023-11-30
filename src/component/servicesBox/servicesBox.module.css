@@ -1,0 +1,38 @@
+.box {
+    width: 26%;
+    height: 300px;
+    border: 1px solid rgb(7, 197, 118);
+    border-radius: 3px;
+    color: white;
+    background: #333846;
+    margin-left: 5.3%;
+    overflow: hidden;
+}
+
+.box .iconService {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.box .titleService {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.box .contentService {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.box .iconService:hover , .box .titleService:hover , .box .contentService:hover {
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}

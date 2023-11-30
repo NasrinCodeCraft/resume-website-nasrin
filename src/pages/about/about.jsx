@@ -5,7 +5,7 @@ function AboutUs() {
 
     return (
 
-        <div className={`container ${styled.backgroundColorSky}`}>
+        <div className={`${styled.backgroundColorSky}`}>
             <div className={styled.bio}>
                 <pre>
                     <p>Who's this girl?</p>

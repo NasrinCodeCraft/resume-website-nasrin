@@ -1,0 +1,35 @@
+.titleService {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: -30%;
+}
+
+.titleService pre , .titleService p{
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.titleService p {
+    margin-top: 5%;
+}
+
+.titleService pre span {
+    color: rgb(13, 223, 135);
+}
+
+.servicesBox {
+    position: relative;
+    width: 100%;
+    left: 0%;
+    top: 20%;
+    display: flex;
+}
+
+.servicesBox :hover {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 4px rgb(13, 223, 135);
+}

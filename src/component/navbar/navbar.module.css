@@ -11,7 +11,8 @@
     font-family: sans-serif;
     color: #fff;
     opacity: 0;
-    animation: menu-move-in 2000ms 300ms forwards
+    animation: menu-move-in 2000ms 300ms forwards;
+    z-index: 10;
 }
 
 @keyframes menu-move-in {

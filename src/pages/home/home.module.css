@@ -1,5 +1,9 @@
 .backgroundColorSky {
-  z-index: -50;
+  width: 100%;
+  height: 100vh;
+  background: #202736;
+  background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
+  min-height: 100vh;
 }
 
 .stars {
@@ -25,7 +29,6 @@
   width: 60%;
   height: 85%;
   transform: translate(-50%, -100%);
-  z-index: 2;
   opacity: 0;
   animation: portfolio-move-in 1.2s 1s forwards;
 }
@@ -74,7 +77,6 @@
   color: #fff;
   opacity: 0;
   font-size: 50px;
-  z-index: 4;
   text-align: center;
   animation: pre--move-in 1.2s 1s forwards;
 }

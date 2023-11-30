@@ -7,7 +7,7 @@ import downloadCv from "./../../assets/files/cv.pdf";
 function Home() {
     return (
         <>
-            <div className={`container ${styled.backgroundColorSky}`}>
+            <div className={styled.backgroundColorSky}>
                 <div className={styled.stars}></div>
                 <pre>
                     I do website design <br /><span>&</span> code.

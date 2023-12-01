@@ -1,0 +1,22 @@
+{
+  "boxes":[
+    {
+      "id": 1,
+      "icon": "/assets/icons/code.svg",
+      "title": "Code",
+      "Desc": "Passionate programmer skilled in crafting efficient and scalable solutions using various languages and technologies."
+    },
+    {
+      "id": 2,
+      "icon": "/assets/icons/baseline-support-agent.svg",
+      "title": "Support",
+      "Desc": "Dedicated support professional with a knack for troubleshooting technical issues and ensuring a positive user experience."
+    },
+    {
+      "id": 3,
+      "icon": "/assets/icons/design-ideas-16-regular.svg",
+      "title": "Design",
+      "Desc": "Creative designer blending artistic vision with technical proficiency to create visually appealing and user-friendly interfaces."
+    }
+  ]
+}

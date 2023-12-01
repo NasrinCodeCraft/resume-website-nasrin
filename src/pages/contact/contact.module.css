@@ -1,0 +1,73 @@
+.contactTitle{
+    position: absolute;
+    color: white;
+    margin-bottom: 40%;
+    text-align: center;
+}
+
+.contactTitle span {
+    color: rgb(13, 223, 135);
+}
+
+.textSideForm {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-right: 54%;
+    line-height: 55px;
+}
+
+.textSideForm span {
+    color: #f300b4;
+}
+
+.contactMeForm {
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 15% 15% 55% 15%;
+    padding: 20px;
+    margin-left: 43%;
+    margin-top: 12%;
+}
+
+.sendButton {
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(13, 223, 135);
+    cursor: pointer;
+    color: white;
+}
+
+.sendButton:hover , .sendButton:active {
+    transition: 0.5s;
+    margin-top: 19px;
+    border: 2px solid rgb(40, 243, 158);
+    box-shadow: 0 0 0.5px 0.5px  rgb(13, 223, 135);
+}
+
+.apps {
+    position: absolute;
+    width: 30%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-right: 62%;
+    margin-top: 25%;
+}
+
+.apps a img {
+    width: 40px;
+    height: 40px;
+}
+
+.apps a img:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+}

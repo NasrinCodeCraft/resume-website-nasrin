@@ -8,7 +8,6 @@
 }
 
 a {
-  cursor: pointer;
   user-select: none;
 }
 
@@ -16,4 +15,24 @@ body {
   overflow-x: hidden;
   background: #202736;
   background: linear-gradient(to bottom, #181d23 0%, #202736 80%);
+}
+
+input , textarea {
+  width: 100%;
+  padding: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  color: white;
+  border-bottom: 2px solid rgb(13, 223, 135);  
+}
+input {
+  height: 50px;
+  background-color: transparent;
+}
+
+textArea {
+  background-color: transparent;
+  resize: none;
 }

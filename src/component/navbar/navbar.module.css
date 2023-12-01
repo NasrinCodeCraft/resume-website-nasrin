@@ -35,6 +35,7 @@
 
 .header ul li {
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .header a:after {

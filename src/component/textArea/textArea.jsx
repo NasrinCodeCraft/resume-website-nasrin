@@ -5,7 +5,9 @@ function TextArea(props) {
         <>
             <textarea
                 onChange={props.handleChange} 
-                placeholder={props.placeHolder}>         
+                placeholder={props.placeHolder}
+                name={props.name}        
+                > 
             </textarea>
         </>
     )

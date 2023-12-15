@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <div className={styled.header}>
                 <label className={styled.menuToggle} htmlFor="demo" onClick={toggleMenu}>
-                    <input type="checkbox" id="demo" checked={menuOpen} onChange={toggleMenu}/>
+                    <input type="checkbox" id="demo" className={styled.toggleMenu} checked={menuOpen} onChange={toggleMenu}/>
                     <span></span>
                     <span></span>
                     <span></span>

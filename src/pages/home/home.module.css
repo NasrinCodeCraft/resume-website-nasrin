@@ -26,8 +26,8 @@
 
 .profile {
   position: absolute;
-  width: 60%;
-  height: 85%;
+  width: 50%;
+  height: 70%;
   transform: translate(-50%, -100%);
   opacity: 0;
   animation: portfolio-move-in 1.2s 1s forwards;
@@ -45,12 +45,12 @@
 }
 .moon {
   position: absolute;
-  top: 0;
+  width: 40%;
+  height: 40%;
   left: 0;
+  top: 8%;
   background: url(../../assets/images/Moon.svg) center center no-repeat;
-  background-size: 40% 40%;
-  width: 100%;
-  height: 100%;
+  background-size: contain;
   opacity: 0;
   animation: moon-move-in 1.2s 1s forwards;
 }
@@ -58,12 +58,12 @@
 @keyframes moon-move-in {
   from {
     opacity: 0;
-    background-position: left 150%;
+    top: 60%;
   }
 
   to {
     opacity: 1;
-    background-position: top left;
+    top: 8.5%;
   }
 }
 
@@ -133,5 +133,144 @@
   to {
     opacity: 1;
     left: 19%;
+  }
+}
+
+@media only screen and (min-width: 279px) and (max-width: 767px) {
+  .profile {
+    width: 90%;
+    height: 50%;
+    animation: portfolio-move-in 1.2s 1s forwards;
+  }
+
+  @keyframes portfolio-move-in {
+    from {
+      opacity: 0;
+      left: 150%;
+    }
+    to {
+      opacity: 1;
+      left: 50%;
+    }
+  }
+
+  .downloadCv {
+    position: absolute;
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    top: 43%;
+    font-size: 15px;
+    animation: downloadBtn--move-in 1.2s 1s forwards;
+  }
+
+  @keyframes downloadBtn--move-in {
+    from {
+      opacity: 0;
+      left: -150%;
+    }
+  
+    to {
+      opacity: 1;
+      left: 25%;
+    }
+  }
+
+  .backgroundColorSky pre {
+    width: 90%;
+    font-size: 25px;
+    top: 32%;
+    animation: pre--move-in 1.2s 1s forwards;
+    text-align: center;
+    z-index: 2;
+  }
+
+  @keyframes pre--move-in {
+    from {
+      opacity: 0;
+      left: -150%;
+    }
+  
+    to {
+      opacity: 1;
+      left: 5%;
+    }
+  }
+
+  @keyframes moon-move-in {
+    from {
+      opacity: 0;
+      left: 150%;
+      top: -150px;
+    }
+  
+    to {
+      opacity: 1;
+      background-position: top left;
+    }
+  }
+}
+
+@media only screen and (min-width: 738px) and (max-width: 1023px) {
+  .profile {
+    width: 60%;
+    height: 70%;
+    transform: translate(-60%, -100%);
+  }
+
+  .backgroundColorSky pre {
+    top: 160px;
+    font-size: 35px;
+    animation: pre--move-in 1.2s 1s forwards;
+    text-align: left;
+  }
+
+  @keyframes pre--move-in {
+    from {
+      opacity: 0;
+      right: -150%;
+    }
+  
+    to {
+      opacity: 1;
+      right: 55px;
+    }
+  }
+
+  .downloadCv {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    animation: downloadBtn--move-in 1.2s 1s forwards;
+  }
+
+  @keyframes downloadBtn--move-in {
+    from {
+      opacity: 0;
+      left: -150%;
+    }
+  
+    to {
+      opacity: 1;
+      left: 14%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 3840px)
+{
+  .backgroundColorSky pre {
+    top: 55%;
+    font-size: 90px;
+    text-align: left;
+  }
+
+  .downloadCv {
+    width: 450px;
+    height: 150px;
+    font-size: 40px;
+    animation: downloadBtn--move-in 1.2s 1s forwards;
+    line-height: 150px;
   }
 }

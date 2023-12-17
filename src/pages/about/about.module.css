@@ -5,20 +5,7 @@
     align-items: center;
 }
 
-.bio {
-    margin-right: -100%;
-    line-height: 55px;
-    margin-top: 30%;
-    color: white;
-}
-
-.bio pre{
-    text-align: center;
-    font-size: 20px;
-    line-height: 45px;
-}
-
-.bio p{
+.backgroundColorSky p{
     position: absolute;
     left: 50%;
     top: 125%;
@@ -26,20 +13,50 @@
     font-size: 30px;
     margin-bottom: 4%;
     text-align: center;
+    color: white;
 }
 
-.bio p span {
+.backgroundColorSky p span {
     color: rgb(13, 223, 135);
+}
+
+.orderingAboutContent {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border: 3px solid green; */
+}
+
+.bio {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 75px;
+    line-height: 55px;
+    color: white;
+}
+
+.bio p{
+    width: 100%;
+    height: max-content;
+    text-align: left;
+    font-size: 20px;
+    line-height: 45px;
+    /* border: 3px solid blueviolet; */
+    top: 50%;
+    word-wrap: break-word;
 }
 
 .box_porofile {
     position: absolute;
-    width: 350px;
-    height: 400px;
-    left: 75px;
+    width: 30%;
+    height: 100%;
+    right: 75px;
     border: 4px solid rgb(28, 194, 125);
     border-radius: 7px;
-    margin-top: 14%;
     z-index: 1;
 }
 
@@ -53,4 +70,124 @@
     border: 1px solid black;
     box-shadow: 0 0 15px #000000;
     z-index: 2;
+}
+
+@media only screen and (min-width: 279px) and (max-width: 470px)
+{
+    .backgroundColorSky .who {
+        font-size: 15px;
+        margin-top: -20%;
+    }
+    .orderingAboutContent{
+        display: grid;
+        height: 70%;
+        margin-top: 35%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .bio {
+        width: 100%;
+        height: 40%;
+        left: 0;
+        top: 56%;
+    }
+
+    .bio p {
+        width: 80%;
+        margin-left: 2%;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    
+    .box_porofile {
+        width: 80%;
+        height: 50%;
+        left: 10%;
+    }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 767px)
+{
+    .backgroundColorSky .who {
+        font-size: 20px;
+        margin-top: -15%;
+    }
+    .orderingAboutContent{
+        display: grid;
+        height: 70%;
+        margin-top: 25%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .bio {
+        width: 100%;
+        height: 50%;
+        left: 0;
+        top: 50%;
+    }
+
+    .bio p {
+        width: 80%;
+        margin-left: 2%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    .box_porofile {
+        width: 80%;
+        height: 55%;
+        left: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+{
+    .backgroundColorSky .who {
+        font-size: 22px;
+        margin-top: -6%;
+    }
+
+    .orderingAboutContent {
+        height: 60%;
+    }
+    .box_porofile {
+        height: 80%;
+        width: 40%;
+        right: 40px;
+        top: 10%;
+    }
+    
+    .bio {
+        left: 40px;
+    }
+
+   .bio p {
+        font-size: 18px;
+        width: 90%;
+    } 
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px)
+{
+    .backgroundColorSky .who {
+        font-size: 33px;
+    }
+
+    .bio p {
+        font-size: 25px;
+    } 
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 3840px)
+{
+    .backgroundColorSky .who {
+        font-size: 66px;
+        line-height: 100px;
+    }
+
+    .bio p {
+        font-size: 50px;
+        line-height: 100px;
+
+    } 
 }
